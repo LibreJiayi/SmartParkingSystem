@@ -21,7 +21,7 @@ PyYAMLSQLAlchemy，
 WTForms，
 Werkzeug
 #### Software Architecture
-The backend architecture description
+
 - code
   - controller   <!--Basic Method of Database-->
     - __init__.py
@@ -39,8 +39,16 @@ The backend architecture description
   - config.py
   - __init__.py
 - utils         <!--Common Methods-->
-
-The frontend architecture description
-
-
-
+- views         <!--View file-->
+  - __init__.py
+  - carlist
+    - __init__.py
+    - carlistviews.py
+  - history
+    - __init__.py
+    - historyviews.py
+  - index
+    - __init__.py
+    - indexviews.py
+- forms.py     <!--Template function file-->
+- start.py     <!--Entry file-->
