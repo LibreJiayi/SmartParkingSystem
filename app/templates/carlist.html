@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class="page-header">
+    <div class="index1" style="height: 200px;margin-bottom: 10px;">
+        <h1>车位使用情况</h1>
+        <form method="post" novalidate>
+            {{form.hidden_tag()}}
+            {{form.parkingID.label}}{{form.parkingID}}
+            {{form.submit()}}
+            <label >输入为空时查询全部</label>
+        </form>
+        <form method="post" novalidate>
+            {{form.OutID.label}}{{form.OutID}}
+            {{form.outmit()}}
+            <label >如未响应则该车位号没有车辆</label>
+        </form>
+        <h4>{{carid}}车辆{{innout}}停车场</h4>
+    </div>
+    <span style="width: 595px;float: left">
+        <table class="hovertable" style="font-size: 20px">
+        <tr>
+            <td width="150">车牌号</td>
+            <td width="275">入场时间</td>
+<!--            <td width="275">出场时间</td>-->
+<!--            <td width="60">总时间</td>-->
+            <td width="100">办卡</td>
+<!--            <td width="100">费用</td>-->
+            <td width="100">车位号</td>
+        </tr>
+
+        {% for car in carlist %}
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+            <td>{{car['CarID']}}</td>
+            <td>{{car['StartTime']}}</td>
+<!--            <td>{{car['EndTime']}}</td>-->
+<!--            <td>{{car['TotalTime']}}</td>-->
+<!--            <td>{{car['AnyCard']}}</td>-->
+            {% if car['AnyCard'] == 0%}
+            <td>未办卡</td>
+            {% endif %}
+            {% if car['AnyCard'] == 1%}
+            <td>月卡</td>
+            {% endif %}
+            {% if car['AnyCard'] == 2%}
+            <td>年卡</td>
+            {% endif %}
+<!--            <td>{{car['Fee']}}</td>-->
+            <td>{{car['ParkingID']}}</td>
+        </tr>
+        {% endfor %}
+
+        </table>
+    </span>
+    <span class="car1">
+        注意事项:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    </span>
+<!--    <table class="hovertable" style="font-size: 20px">-->
+<!--        <tr>-->
+<!--            <td width="150">车牌号</td>-->
+<!--            <td width="275">入场时间</td>-->
+<!--&lt;!&ndash;            <td width="275">出场时间</td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td width="60">总时间</td>&ndash;&gt;-->
+<!--            <td width="100">办卡</td>-->
+<!--&lt;!&ndash;            <td width="100">费用</td>&ndash;&gt;-->
+<!--            <td width="100">车位号</td>-->
+<!--        </tr>-->
+
+<!--        {% for car in carlist %}-->
+<!--        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">-->
+<!--            <td>{{car['CarID']}}</td>-->
+<!--            <td>{{car['StartTime']}}</td>-->
+<!--&lt;!&ndash;            <td>{{car['EndTime']}}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td>{{car['TotalTime']}}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td>{{car['AnyCard']}}</td>&ndash;&gt;-->
+<!--            {% if car['AnyCard'] == 0%}-->
+<!--            <td>未办卡</td>-->
+<!--            {% endif %}-->
+<!--            {% if car['AnyCard'] == 1%}-->
+<!--            <td>月卡</td>-->
+<!--            {% endif %}-->
+<!--            {% if car['AnyCard'] == 2%}-->
+<!--            <td>年卡</td>-->
+<!--            {% endif %}-->
+<!--&lt;!&ndash;            <td>{{car['Fee']}}</td>&ndash;&gt;-->
+<!--            <td>{{car['ParkingID']}}</td>-->
+<!--        </tr>-->
+<!--        {% endfor %}-->
+
+<!--    </table>-->
+</div>
+{% endblock %}

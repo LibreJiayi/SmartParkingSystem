@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+    <div class="index1">
+        <h1>保安厅</h1>
+    <div>
+        <p>{{carid}}车辆{{innout}}停车场</p>
+        <p class="p2">占用车位:{{parked}}</p>
+        <p class="p2">空闲车位:{{rest}}</p>
+    </div>
+    <form method="post" novalidate>
+        {{ form.hidden_tag() }}
+        {{form.card.label}}{{form.card}}{{form.submit()}}
+    </form>
+    </div>
+<!--    <h1>保安厅</h1>-->
+<!--    <div>-->
+<!--        <p>{{carid}}车辆{{innout}}停车场</p>-->
+<!--        <p class="p2">占用车位:{{parked}}</p>-->
+<!--        <p class="p2">空闲车位:{{rest}}</p>-->
+<!--    </div>-->
+<!--    <form method="post" novalidate>-->
+<!--        {{ form.hidden_tag() }}-->
+<!--        {{form.card.label}}{{form.card}}{{form.submit()}}-->
+<!--    </form>-->
+    <label style="font-size: 85px;">欢迎使用本停车场管理系统!</label>
+{% endblock %}
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>主页</title>-->
+<!--    <style>-->
+<!--        div {-->
+<!--            text-align: center;-->
+<!--        }-->
+<!--        .p2{-->
+<!--            font-size: xxx-large;-->
+<!--            font-weight:bold;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
