@@ -2,8 +2,6 @@
 # -*- coding:utf-8 -*-
 
 # file:__init__.py.py
-# author:ZCJ
-# datetime:2022/6/30 14:10
 # software: PyCharm
 
 """
