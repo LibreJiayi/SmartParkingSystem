@@ -7,7 +7,7 @@ from app.controller.carsController import CarsController
 from app.controller.parkingController import ParkingController
 
 
-# 随机生成车牌号
+# 随机生成车牌号, 用作测试，后期要接入硬件
 def car_num():
     """
     随机生成车牌号，先随机生成一个省份简称，然后随机生成一个大写字母，
