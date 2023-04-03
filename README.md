@@ -20,35 +20,3 @@ PyMysQL，
 PyYAMLSQLAlchemy，
 WTForms，
 Werkzeug
-#### Software Architecture
-
-- code
-  - controller   <!--Basic Method of Database-->
-    - __init__.py
-    - carsController.py
-    - parkingController.py
-  - models      <!--Database Object-->
-    - __init__.py
-    - cars.py
-    - parking.py
-  - service     <!--Database Operation Method-->
-    - __init__.py
-    - service
-  - __init__.py
-- config        <!--Configuration File-->
-  - config.py
-  - __init__.py
-- utils         <!--Common Methods-->
-- views         <!--View file-->
-  - __init__.py
-  - carlist
-    - __init__.py
-    - carlistviews.py
-  - history
-    - __init__.py
-    - historyviews.py
-  - index
-    - __init__.py
-    - indexviews.py
-- forms.py     <!--Template function file-->
-- start.py     <!--Entry file-->
