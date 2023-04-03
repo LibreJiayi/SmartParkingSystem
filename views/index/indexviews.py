@@ -2,8 +2,6 @@
 # -*- coding:utf-8 -*-
 
 # file:indexviews.py
-# author:ZCJ
-# datetime:2022/6/24 19:33
 # software: PyCharm
 
 """
