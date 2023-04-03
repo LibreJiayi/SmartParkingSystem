@@ -1,5 +1,9 @@
-body{
-    background-image:url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhomesitetask.zbjimg.com%2Fhomesite%2Ftask%2F%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20201130171201.png%2Forigine%2F5c7dd79b-23f0-452a-9841-b67822235bbe&refer=http%3A%2F%2Fhomesitetask.zbjimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1659190081&t=d9fc714ade44db2e5d56bb21c0d101ff");
+body {
+    background-image: url("https://www.naha-airport.co.jp/common/uploads/thumb_parking-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 table.hovertable {
@@ -32,6 +36,93 @@ a {
     bottom: 0px;
 }
 
+h1 {
+    color: white;
+}
+h4 {
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+}
+
+input {
+    margin: 5px;
+}
+
+label {
+    color: white;
+}
+input[type=submit] {/
+	/*width: 270px; !* 宽度 *!*/
+	height: 20px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	/*border-radius: 3px; !* 边框半径 *!*/
+	background: #1E90FF; /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: 宋体; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 17px; /* 字体大小 */
+}
+input[type=submit]:hover { /* 鼠标移入按钮范围时改变颜色 */
+	background: #5599FF;
+}
+
+select {
+    margin: 5px;
+}
+
+.index1 {
+    width: 1000px;
+
+height: 300px;
+
+background:#72767b;
+
+border-radius: .8em;
+
+padding: 1em;
+
+box-shadow: 0 0 0 .6em #655;
+
+outline: .6em solid #655;
+
+/*float: left;*/
+}
+
+.car1 {
+    /*width: 350px;*/
+    /*height: 780px;*/
+    /*background-color: #1E90FF;*/
+    /*margin-left: 10px;*/
+    /*float: left;*/
+    width: 400px;
+
+height: 500px;
+
+float: left;
+
+padding: 1em;
+
+border: 1em solid transparent;
+
+background: linear-gradient(white, white) padding-box,
+
+repeating-linear-gradient(-45deg,
+
+red 0, red 12.5%,
+
+transparent 0, transparent 25%,
+
+#58a 0, #58a 37.5%,
+
+transparent 0, transparent 50%)
+
+0 / 5em 5em;
+}
 h1 {
     color: white;
 }
