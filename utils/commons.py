@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-# file: urls
 # datetime: 2023-03-14 16:39
 # software: PyCharm
 
